@@ -6,6 +6,23 @@ public class Person{
     private int birthMonth;
     private int birthDay;
 
+
+  public static void main(String[] args) {
+    
+    Person person = new Person("Péli", "Tamás");
+
+    person.printPerson();
+    System.out.println();
+    person.setbirthMonth(4);
+    person.setbirthDay(8);
+    person.setfirstName("Kiss");
+    person.printPerson();
+
+
+
+  }
+
+
     public Person(String _firstName,String _lastName, int _birthYear, int _birthMonth,int _birthDay ) {
         
         this.firstName = _firstName;
@@ -15,6 +32,14 @@ public class Person{
         this.birthDay = _birthDay;
         
 
+    }
+
+    public Person(String firstName, String lastName) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.birthYear = 2004;
+      this.birthMonth = 1;
+      this.birthDay = 18;
     }
 
     public String getfirstName() {

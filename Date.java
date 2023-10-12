@@ -5,7 +5,12 @@ public class Date {
 public static void main(String[] args) {
     Date date = new Date(2024, 2, 29);
 
-    System.out.println(date.IsCorrectDate());
+    date.printDate();
+
+    Date date2 = new Date(2023, 2, 29);
+
+    date2.printDate();
+
 }
 
     private int _year;
@@ -97,7 +102,13 @@ public static void main(String[] args) {
     }
 
     public void printDate(){
-        System.out.println(get_year()+"."+get_month()+"."+getDay());
+        if(IsCorrectDate()){
+
+            System.out.println(get_year()+"."+get_month()+"."+getDay());
+        }
+        else{
+            System.out.println("Helytelen idő");
+        }
     }
 
 }

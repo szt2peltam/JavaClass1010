@@ -2,6 +2,18 @@ public class Animal {
     private int numberOfLegs;
     private int numberOfEyes;
     private String name;
+
+
+public static void main(String[] args) {
+    Animal animal = new Animal(3, 2, "Karcsi");
+
+    animal.printAnimal();
+
+    animal.setName("Janics");
+    animal.setNumberOfLegs(122);
+    animal.printAnimal();
+}
+
     public Animal(int numberOfLegs, int numberOfEyes, String name) {
         this.numberOfLegs = numberOfLegs;
         this.numberOfEyes = numberOfEyes;
